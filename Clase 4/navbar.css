@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 85);
+    color: yellow;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    h1 {
+        text-align: center;
+
+    }
+}
+
+.proyectos {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.proyectos li {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(222, 222, 222);
+    box-shadow: 5px 5px gray;
+    border-radius: 5px;
+}
+
+.proyectos li:hover {
+    background-color: gray;
+    color: white;
+    cursor: context-menu;
+    box-shadow: 0px 0px white;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .proyectos {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

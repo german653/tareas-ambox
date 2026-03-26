@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="nav-contenedor">
+                <h3 class="nav-logo">Portafolio</h3>
+
+                <button class="btn-hamburguesa navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="nav-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#sobremi">Sobre mí</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SOBRE MÍ -->
+        <section id="sobremi">
+
+            <!-- Columna izquierda: texto -->
+            <div class="sobremi-texto">
+                <h1>Hola, soy <span class="texto-color">Desarrollador Web</span></h1>
+                <p>Soy un desarrollador web con experiencia en el desarrollo de aplicaciones web modernas y responsivas.
+                </p>
+                <div class="sobremi-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                </div>
+                <button class="btn-principal" onclick="abrirModal()">Certificado Full Stack</button>
+            </div>
+
+
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="projects">
+            <div class="titulo-seccion">
+                <h2>Mis <span class="texto-color">Proyectos</span></h2>
+                <p>Una selección de proyectos reales que muestran mis habilidades.</p>
+            </div>
+
+            <div class="contenedor-cards">
+
+                <article class="card-proyecto">
+                    <img src="https://i.postimg.cc/52S6WPG8/logo-zapas.jpg" alt="Shoeshops">
+                    <div class="card-info">
+                        <span class="card-categoria">Zapatillas</span>
+                        <h5>Shoeshops</h5>
+                        <p>Venta de zapatillas urbanas</p>
+                        <a href="https://shoeshopgs.netlify.app/" target="_blank" class="btn-card">Ver Proyecto</a>
+                    </div>
+                </article>
+
+                <article class="card-proyecto">
+                    <img src="https://i.postimg.cc/rs7q54HV/logo-miga.png" alt="Noblemiga">
+                    <div class="card-info">
+                        <span class="card-categoria">Comida Saludable</span>
+                        <h5>Noblemiga</h5>
+                        <p>Venta de comida saludable</p>
+                        <a href="https://noblemiga.netlify.app/" target="_blank" class="btn-card">Ver Proyecto</a>
+                    </div>
+                </article>
+
+                <article class="card-proyecto">
+                    <img src="https://i.postimg.cc/vTCG5nNp/logo-snack.png" alt="Snackbox">
+                    <div class="card-info">
+                        <span class="card-categoria">Snacks</span>
+                        <h5>Snackbox</h5>
+                        <p>Venta de jugos y alfajores</p>
+                        <a href="https://snackbox-tienda.vercel.app/" target="_blank" class="btn-card">Ver Proyecto</a>
+                    </div>
+                </article>
+
+                <article class="card-proyecto">
+                    <img src="https://i.postimg.cc/MZLZkkpj/logo-German.png" alt="Curriculum German">
+                    <div class="card-info">
+                        <span class="card-categoria">Portafolio</span>
+                        <h5>Curriculum Germán</h5>
+                        <p>CV digital interactivo</p>
+                        <a href="https://curriculum-germanoviedo.vercel.app/" target="_blank" class="btn-card">Ver
+                            Proyecto</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contact">
+            <div class="titulo-seccion">
+                <h2>Contacto</h2>
+                <p>¿Tenés un proyecto en mente? ¡Hablemos!</p>
+            </div>
+            <div class="contenedor-contacto">
+                <div class="dato-contacto">
+                    <strong>Email</strong>
+                    <span>oviedogerman41@gmail.com</span>
+                </div>
+                <div class="dato-contacto">
+                    <strong>WhatsApp</strong>
+                    <span>+54 9 351 342-7543</span>
+                </div>
+                <div class="dato-contacto">
+                    <strong>Ubicación</strong>
+                    <span>Córdoba, Argentina</span>
+                </div>
+            </div>
+            <button class="btn-principal">Enviar Mensaje</button>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Portafolio &copy; 2026 · Hecho por German Oviedo</p>
+    </footer>
+
+
+    <!-- MODAL CERTIFICADO -->
+    <div class="modal-fondo" id="modal" onclick="cerrarModal()">
+        <div class="modal-contenido" onclick="event.stopPropagation()">
+            <button class="modal-cerrar" onclick="cerrarModal()">✕</button>
+            <img src="https://i.postimg.cc/9QLnvWtw/certificado.jpg" alt="Certificado Full Stack">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function abrirModal() {
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function cerrarModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
