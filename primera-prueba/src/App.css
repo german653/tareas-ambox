@@ -1,0 +1,9 @@
+:root {
+  background-color: darkcyan;
+}
+
+.contenedorUsuarios {
+  display: flex;
+  flex-direction: row;
+  gap: 20px
+}
